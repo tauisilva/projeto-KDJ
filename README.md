@@ -4,6 +4,11 @@
 ## projeto-kdj
 Projeto de Computabilidade e Complexidade de Algoritmos
 
+<div align=center>
+  
+  ![Alt](https://repobeats.axiom.co/api/embed/eeebed88cc9ee8708ea1298820796850350a5bdc.svg "Repobeats analytics image")
+</div>
+
 ```markdown
 # Predição de Ações na Bolsa de Valores com Python e Facebook Prophet
 
