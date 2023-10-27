@@ -2,7 +2,7 @@
 # ESTE README ESTA EM DESENVOLVIMENTO HAVERÁ MUDANÇAS
 
 ## projeto-kdj
-Computabilidade e Complexidade de Algoritmos
+Projeto de Computabilidade e Complexidade de Algoritmos
 
 Claro, aqui está um exemplo de um README para um projeto de predição de ações na bolsa de valores com Python e Facebook Prophet:
 
