@@ -24,7 +24,7 @@ Este projeto utiliza Machine Learning para projetar valores futuros de ações. 
 Para instalar as dependências do projeto, execute o seguinte comando:
 
 ```bash
-pip install pandas pandas_ta yfinance plotly fbprophet
+pip install -r requirements.txt
 ```
 
 ## Uso
