@@ -9,6 +9,10 @@ Projeto de Computabilidade e Complexidade de Algoritmos
   ![Alt](https://repobeats.axiom.co/api/embed/eeebed88cc9ee8708ea1298820796850350a5bdc.svg "Repobeats analytics image")
 </div>
 
+## Tecnologias
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
 ```markdown
 # Predição de Ações na Bolsa de Valores com Python e Facebook Prophet
 
