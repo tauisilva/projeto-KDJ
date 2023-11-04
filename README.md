@@ -12,6 +12,7 @@ Projeto de Computabilidade e Complexidade de Algoritmos
 ## Tecnologias
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Powershell](https://img.shields.io/badge/powershell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
 
 ```markdown
 # Predição de Ações na Bolsa de Valores com Python e Facebook Prophet
@@ -25,14 +26,23 @@ Este projeto utiliza Machine Learning para projetar valores futuros de ações. 
 
 ## Instalação
 
-Para instalar as dependências do projeto, execute o seguinte comando:
+Para instalar as dependências do projeto, siga um dos passos:
 
-```powershell(windows)
 
-./install.ps1
+```powershell
+# Utilizando o powershell execute o seguinte comando :
+
+$ ./start.bat
+
+
+```cmd
+# Utilizando o cmd execute o seguinte comando :
+
+$ start.bat
+
+OBS: Não é possivel executar arquivos .bat no bash, abra o cmd ou powershell para isso
 
 ```
-
 ## Uso
 
 Para usar este projeto, siga os passos abaixo:
