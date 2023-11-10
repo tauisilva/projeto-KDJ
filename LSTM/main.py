@@ -16,7 +16,7 @@ stock_data = yf.download('AAPL', start=start_date, end=end_date)
 
 close_prices = stock_data['Close']
 values = close_prices.values
-training_data_len = math.ceil(len(values) * 0.5)
+training_data_len = math.ceil(len(values) * 0.85)
 
 scaler = MinMaxScaler(feature_range=(0, 1))
 scaled_data = scaler.fit_transform(values.reshape(-1, 1))
