@@ -16,7 +16,7 @@ stock_data = yf.download('AAPL', start=start_date, end=end_date)
 
 close_prices = stock_data['Close']
 values = close_prices.values
-training_data_len = math.ceil(len(values) * 0.8)
+training_data_len = math.ceil(len(values) * 0.5)
 
 scaler = MinMaxScaler(feature_range=(0, 1))
 scaled_data = scaler.fit_transform(values.reshape(-1, 1))
@@ -54,17 +54,29 @@ model.summary()
 model.compile(optimizer='adam', loss='mean_squared_error')
 model.fit(x_train, y_train, batch_size=1, epochs=3)
 
+# Crie uma nova entrada de teste para o dia seguinte
+last_60_days = scaled_data[-60:]
+x_test_next_day = np.reshape(last_60_days, (1, 60, 1))
+prediction_next_day = model.predict(x_test_next_day)
+prediction_next_day = scaler.inverse_transform(prediction_next_day)
+
+# Adicione a previsão do próximo dia ao DataFrame
+next_day = pd.DataFrame({'Close': [prediction_next_day[0, 0]]}, index=[stock_data.index[-1] + timedelta(days=1)])
+stock_data = pd.concat([stock_data, next_day])
+
+# Faça previsões para o conjunto de teste original
 predictions = model.predict(x_test)
 predictions = scaler.inverse_transform(predictions)
-rmse = np.sqrt(np.mean(predictions - y_test) ** 2)
-rmse
+
+# Calcule o RMSE original e para o próximo dia
+rmse_original = np.sqrt(np.mean(predictions - y_test) ** 2)
+rmse_next_day = np.sqrt(np.mean(prediction_next_day - y_test[-1]) ** 2)
 
 data = stock_data.filter(['Close'])
 train = data[:training_data_len]
 validation = data[training_data_len:]
-validation['Predictions'] = predictions
+validation['Predictions'] = np.concatenate([predictions, prediction_next_day])
 
-# Plotly visualization
 fig = go.Figure()
 
 fig.add_trace(go.Scatter(x=train.index, y=train['Close'], mode='lines', name='Train'))
@@ -72,10 +84,18 @@ fig.add_trace(go.Scatter(x=validation.index, y=validation['Close'], mode='lines'
 fig.add_trace(go.Scatter(x=validation.index, y=validation['Predictions'], mode='lines', name='Predictions'))
 
 fig.update_layout(
-    title='Model',
+    title='Stock Price Prediction with LSTM',
     xaxis=dict(title='Date'),
     yaxis=dict(title='Close Price USD ($)'),
-    legend=dict(x=0, y=1, traceorder='normal')
+    legend=dict(x=0, y=1, traceorder='normal'),
+    annotations=[
+        dict(x=train.index[-1], y=train['Close'].iloc[-1], xref="x", yref="y", text="Last Train Data", showarrow=True, arrowhead=5, ax=0, ay=-40),
+        dict(x=validation.index[0], y=validation['Close'].iloc[0], xref="x", yref="y", text="First Validation Data", showarrow=True, arrowhead=5, ax=0, ay=-40),
+        dict(x=validation.index[-1], y=validation['Predictions'].iloc[-1], xref="x", yref="y", text="Last Prediction", showarrow=True, arrowhead=5, ax=0, ay=-40),
+    ]
 )
+
+print(f'RMSE for the original test set: {rmse_original}')
+print(f'Prediction for the next day: {prediction_next_day[0, 0]} (RMSE: {rmse_next_day})')
 
 fig.show()
