@@ -45,6 +45,8 @@ OBS: Não é possivel executar arquivos .bat no bash, abra o cmd ou powershell p
 ```
 ## Uso
 
+(Ressaltando que o projeto é usado exclusivamente para fins Didáticos e de Pesquisa Computacional)
+
 Para usar este projeto, siga os passos abaixo:
 
 1. Clone o repositório para o seu computador.
