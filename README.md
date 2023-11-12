@@ -13,6 +13,8 @@ Projeto de Computabilidade e Complexidade de Algoritmos
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Powershell](https://img.shields.io/badge/powershell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
+[![Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)](https://colab.research.google.com/github/tauisilva/projeto-KDJ/blob/main/Colab/Projeto_KDJ.ipynb)
+
 
 ```markdown
 # Predição de Ações na Bolsa de Valores com Python e Facebook Prophet
