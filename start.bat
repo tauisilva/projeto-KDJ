@@ -1,7 +1,7 @@
 @echo off
 
 echo -----------------------------
-echo Python Environment Setup
+echo Python Environment Setup 
 echo -----------------------------
 echo.
 
@@ -10,8 +10,8 @@ set PYTHON_EXE=python.exe
 
 :: Check if Python is installed
 if not defined PYTHON_EXE (
-    echo [ERROR] Python is not installed on the system.
-    echo Please install Python via the Microsoft Store.
+    echo [ERROR] Python is not installed on the system / Python nao instalado.
+    echo Please install Python via the Microsoft Store / Por favor instale o Python via Microsoft Store.
     pause
     exit /b
 )
@@ -41,9 +41,16 @@ echo [INFO] Updating pip...
 echo [INFO] Installing requirements...
 %PYTHON_EXE% -m pip install -r requirements.txt
 
-echo.
-echo [SUCCESS] Process completed.
-echo.
+:: Ask the user if they want to run main.py
+set /p run_main=Deseja executar main.py? (y/n): 
+
+if /i "%run_main%"=="y" (
+    echo [INFO]Executando main.py...
+    %PYTHON_EXE% main.py
+) else (
+    echo [INFO] main.py nao sera executado.
+)
 
 :: Wait for user input to exit
+echo [INFO] Bye Bye.
 pause
