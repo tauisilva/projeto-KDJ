@@ -2,18 +2,16 @@
 ## projeto-kdj
 Trabalho academico da matéria de computabilidade e Complexidade de Algoritmos
 
-<div width="100%" style="display: flex; flex-direction: row;">
-  <div style="flex: 1;">
+<div width="100%" style="display: flex; flex-direction: row; justify-content: space-between">
+  <div width="50%">
     Mestrado pela [Prof. Kadidja](https://github.com/Kadidjah) <br>
     No [Centro Universitario UDF](https://www.udf.edu.br/)    
   </div>
   
-  <div style="flex: 1;">    
-    <img height="50px" src="https://github.com/tauisilva/projeto-KDJ/blob/main/assets/marcaUdfVariacao.svg"/>
+  <div width="100%" align=center>    
+    <img height="70px" src="./assets/marcaUdfVariacao.svg"/>
   </div>
 </div>
-
-
 
 <div align=center>
   
@@ -48,6 +46,11 @@ Ou se preferir
 ```cmd
 # Execute o seguinte comando :
 $ start.bat
+
+
+## Também acessivel no Google Colab
+
+Clique no badge do Colab
 
 ```
 ## Observações
