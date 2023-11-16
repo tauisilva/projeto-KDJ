@@ -1,6 +1,19 @@
 
 ## projeto-kdj
-Projeto de Computabilidade e Complexidade de Algoritmos
+Trabalho academico da matéria de computabilidade e Complexidade de Algoritmos
+
+<div width="100%" style="display: flex; flex-direction: row;">
+  <div style="flex: 1;">
+    Mestrado pela [Prof. Kadidja](https://github.com/Kadidjah) <br>
+    No [Centro Universitario UDF](https://www.udf.edu.br/)    
+  </div>
+  
+  <div style="flex: 1;">    
+    <img height="50px" src="https://github.com/tauisilva/projeto-KDJ/blob/main/assets/marcaUdfVariacao.svg"/>
+  </div>
+</div>
+
+
 
 <div align=center>
   
