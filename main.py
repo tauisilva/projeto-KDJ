@@ -8,7 +8,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, SimpleRNN
 
 # Define o caminho do arquivo CSV
-cvs = "./Docs/PETR4.SA2.csv"
+cvs = "./Colab/AAPL.csv"
 
 # Lê o arquivo CSV e cria um DataFrame Pandas
 df = pd.read_csv(cvs)
