@@ -1,6 +1,4 @@
 
-# ESTE README ESTA EM DESENVOLVIMENTO HAVERÁ MUDANÇAS
-
 ## projeto-kdj
 Projeto de Computabilidade e Complexidade de Algoritmos
 
@@ -24,37 +22,28 @@ Este projeto utiliza Machine Learning para projetar valores futuros de ações. 
 ## Requisitos
 
 - Python 3.7+
-- Bibliotecas: Prophet, Pandas, Pandas T.A, Yahoo Query, Plotly
+- Bibliotecas: Pandas, Matplotlib, Numpy, Scikit-learn, Tensorflow
 
-## Instalação
-
-Para instalar as dependências do projeto, siga um dos passos:
-
-
-```powershell
-# Utilizando o powershell execute o seguinte comando :
-
-$ ./start.bat
-
+## Instale as bibliotecas citadas
 
 ```cmd
-# Utilizando o cmd execute o seguinte comando :
+#Execute
+mains.py
 
+Ou se preferir
+
+```cmd
+# Execute o seguinte comando :
 $ start.bat
 
-OBS: Não é possivel executar arquivos .bat no bash, abra o cmd ou powershell para isso
-
 ```
-## Uso
+## Observações
+Este projeto é usado exclusivamente para fins Didáticos e de Pesquisa Computacional
 
-(Ressaltando que o projeto é usado exclusivamente para fins Didáticos e de Pesquisa Computacional)
+Não utilize para fins lucrativos
 
-Para usar este projeto, siga os passos abaixo:
+Não nos responsabilizamos por eventuais perdas, o uso e manuseio é de responsabilidade própria 
 
-1. Clone o repositório para o seu computador.
-2. Abra o arquivo `main.py` no seu editor de código favorito.
-3. Modifique a variável `ticker` para a ação que você deseja analisar.
-4. Execute o arquivo `main.py`.
 
 O script irá buscar os dados da ação especificada, realizar a análise e gerar um gráfico com a previsão dos valores futuros.
 
@@ -62,9 +51,6 @@ O script irá buscar os dados da ação especificada, realizar a análise e gera
 
 🍍[Carla Mariana](https://github.com/tekhnedev)  🦝[Matheus Gomes](https://github.com/matheus-gs) 🧑‍🚀[Thiago](https://github.com/Lavolp) 🦆[Taui Silva](github.com/tauisilva)
 
-## Licença
+## Referências
+Usamos o codigo do [Lucas](https://github.com/lucaslattari) como base, para mais informações acesse o [Repositório](https://github.com/lucaslattari/neural-network-series/tree/main/11)
 
-Este projeto está licenciado sob a licença MIT.
-```
-
-Espero que isso ajude! Se você tiver mais perguntas, sinta-se à vontade para perguntar.
