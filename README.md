@@ -1,17 +1,7 @@
 
-## projeto-kdj
-Trabalho academico da matéria de computabilidade e Complexidade de Algoritmos
+## Projeto-KDJ
 
-<div width="100%" style="display: flex; flex-direction: row; justify-content: space-between">
-  <div width="50%">
-    Mestrado pela [Prof. Kadidja](https://github.com/Kadidjah) <br>
-    No [Centro Universitario UDF](https://www.udf.edu.br/)    
-  </div>
-  
-  <div width="100%" align=center>    
-    <img height="70px" src="./assets/marcaUdfVariacao.svg"/>
-  </div>
-</div>
+Algoritmo de análise de dados para previsão de preço de ações
 
 <div align=center>
   
@@ -66,6 +56,15 @@ O script irá buscar os dados da ação especificada, realizar a análise e gera
 ## Contribuição
 
 🍍[Carla Mariana](https://github.com/tekhnedev)  🦝[Matheus Gomes](https://github.com/matheus-gs) 🧑‍🚀[Thiago](https://github.com/Lavolp) 🦆[Taui Silva](github.com/tauisilva)
+
+
+## Informações
+
+Trabalho academico da matéria de computabilidade e Complexidade de Algoritmos
+
+Ministrado pela [Prof. Kadidja](https://github.com/Kadidjah) no  [Centro Universitario UDF](https://www.udf.edu.br/)    
+
+<img height="70px" src="./assets/marcaUdfVariacao.svg"/>
 
 ## Referências
 Usamos o codigo do [Lucas](https://github.com/lucaslattari) como base, para mais informações acesse o [Repositório](https://github.com/lucaslattari/neural-network-series/tree/main/11)
